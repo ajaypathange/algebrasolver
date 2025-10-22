@@ -1,0 +1,137 @@
+.simplifier-page {
+  animation: fadeIn 0.5s ease-in;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.simplifier-page h1 {
+  color: white;
+  text-align: center;
+  margin-bottom: 0.5rem;
+  font-size: 2.5rem;
+}
+
+.simplifier-form {
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  margin-bottom: 2rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.result-container {
+  display: grid;
+  gap: 2rem;
+}
+
+.original-box,
+.simplified-box {
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.original-box h3,
+.simplified-box h3 {
+  color: #667eea;
+  margin-bottom: 1rem;
+}
+
+.expression-text {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
+  padding: 1rem;
+  background: #f8f9fa;
+  border-radius: 8px;
+  margin: 0;
+  border-left: 4px solid #667eea;
+}
+
+.arrow {
+  text-align: center;
+  font-size: 2rem;
+  color: white;
+  margin: 1rem 0;
+}
+
+.steps-container {
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.steps-container h3 {
+  color: #667eea;
+  margin-bottom: 1.5rem;
+}
+
+.steps-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.step {
+  display: flex;
+  gap: 1rem;
+  padding: 0.75rem;
+  background: #f8f9fa;
+  border-radius: 8px;
+  border-left: 4px solid #667eea;
+}
+
+.step-number {
+  color: #667eea;
+  font-weight: bold;
+  flex-shrink: 0;
+}
+
+.step-text {
+  color: #333;
+}
+
+.examples {
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  margin-top: 2rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.examples h3 {
+  color: #667eea;
+  margin-bottom: 1rem;
+}
+
+.examples ul {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 1rem;
+}
+
+.examples li {
+  background: #f8f9fa;
+  padding: 1rem;
+  border-radius: 8px;
+  border-left: 4px solid #667eea;
+  color: #333;
+}
+
+@media (max-width: 768px) {
+  .simplifier-page h1 {
+    font-size: 1.8rem;
+  }
+}
